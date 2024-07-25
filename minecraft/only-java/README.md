@@ -30,6 +30,6 @@ This variable specifies the version of java to use.
 
 e.g.
 ```bash
-JAVA_VERSION="21" sh rocky.sh
+JAVA_VERSION=21 sh rocky.sh
 ```
 

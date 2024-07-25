@@ -21,7 +21,7 @@ This variable specifies the path or the link to the `.mrpack`.
 
 e.g.
 ```bash
-PACK_LINK="https://cdn.modrinth.com/data/my1CiIFD/versions/hgUMxYI2/Nohtis%20Apohcalyps-0.10.3.mrpack" sh java17-rocky.sh
+PACK_LINK=https://cdn.modrinth.com/data/my1CiIFD/versions/hgUMxYI2/Nohtis%20Apohcalyps-0.10.3.mrpack sh java17-rocky.sh
 ```
 
 ### Non-specific java version
@@ -32,6 +32,6 @@ The second variable specifies the version of java to use.
 
 e.g.
 ```bash
-PACK_LINK="https://cdn.modrinth.com/data/my1CiIFD/versions/hgUMxYI2/Nohtis%20Apohcalyps-0.10.3.mrpack" JAVA_VERSION="17" sh rocky.sh
+PACK_LINK=https://cdn.modrinth.com/data/my1CiIFD/versions/hgUMxYI2/Nohtis%20Apohcalyps-0.10.3.mrpack JAVA_VERSION=17 sh rocky.sh
 ```
 
