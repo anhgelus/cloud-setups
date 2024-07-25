@@ -10,5 +10,5 @@ gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 
-dnf install temurin-8-jre
+dnf -y install temurin-8-jre
 

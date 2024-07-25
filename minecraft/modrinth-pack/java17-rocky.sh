@@ -10,7 +10,7 @@ gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 
-dnf install temurin-17-jre go
+dnf -y install temurin-17-jre go
 go install github.com/nothub/mrpack-install@latest
 $p = $(go env GOPATH)/bin
 chmod +x $p/mrpack-install

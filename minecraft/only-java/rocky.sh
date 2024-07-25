@@ -10,5 +10,5 @@ gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 
-dnf install temurin-$JAVA_VERSION-jre
+dnf -y install temurin-$JAVA_VERSION-jre
 
