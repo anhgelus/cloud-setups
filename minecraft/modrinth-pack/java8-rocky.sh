@@ -9,8 +9,8 @@ gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 
-dnf -y install temurin-8-jre
-curl -o mrpack-install https://github.com/nothub/mrpack-install/releases/download/v0.16.10/mrpack-install-linux
+dnf -y install temurin-8-jre wget
+wget -O mrpack-install https://github.com/nothub/mrpack-install/releases/download/v0.16.10/mrpack-install-linux
 chmod +x mrpack-install 
 ./mrpack-install $PACK_LINK
 
