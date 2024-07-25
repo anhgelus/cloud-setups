@@ -1,6 +1,6 @@
 #/usr/bin/bash
 
-cat <<EOF > /etc/yum.repos.d/adoptium.repo
+sudo tee /etc/yum.repos.d/adoptium.repo >/dev/null <<EOF
 [Adoptium]
 name=Adoptium
 baseurl=https://packages.adoptium.net/artifactory/rpm/rhel/\$releasever/\$basearch
@@ -9,5 +9,5 @@ gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 
-dnf -y install temurin-21-jre
+sudo dnf -y install temurin-21-jre
 
