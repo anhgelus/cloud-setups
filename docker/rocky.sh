@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
-sudo -i
-dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-systemctl --now enable docker
-exit
+sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo systemctl --now enable docker
 sudo usermod -a -G docker $(whoami)
 
