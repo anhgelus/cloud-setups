@@ -1,4 +1,4 @@
-#/usr/bin/bash
+#!/usr/bin/bash
 
 sudo -i
 dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
