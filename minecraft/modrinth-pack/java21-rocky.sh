@@ -10,7 +10,7 @@ gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 
 sudo dnf -y install temurin-21-jre wget
-wget -O mrpack-install https://github.com/nothub/mrpack-install/releases/download/v0.16.10/mrpack-install-linux
-chmod +x mrpack-install 
-./mrpack-install $PACK_LINK
+wget -O mrpack-install.rpm https://github.com/nothub/mrpack-install/releases/download/v0.21.0-beta/mrpack-install_0.21.0-beta_linux_amd64.rpm 
+dnf install mrpack-install.rpm
+/usr/local/bin/mrpack-install $PACK_LINK
 
